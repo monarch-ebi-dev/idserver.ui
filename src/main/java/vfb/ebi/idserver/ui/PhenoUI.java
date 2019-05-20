@@ -50,19 +50,19 @@ public class PhenoUI extends UI {
 				String menuitem = selectedItem.getText();
 				if (menuitem.equals(REGISTERDATASET)) {
 					if (!views.containsKey(REGISTERDATASET)) {
-						views.put(REGISTERDATASET, new VerticalLayout());
+						views.put(REGISTERDATASET, new AddDataSetView());
 					}
 					setNewView(views.get(REGISTERDATASET));
 				}
 				else if (menuitem.equals(REGISTERNEURON)) {
 					if (!views.containsKey(REGISTERNEURON)) {
-						views.put(REGISTERNEURON, new VerticalLayout());
+						views.put(REGISTERNEURON, new AddNeuronView());
 					}
 					setNewView(views.get(REGISTERNEURON));
 				}
 				else if (menuitem.equals(UPLOADNEURONS)) {
 					if (!views.containsKey(UPLOADNEURONS)) {
-						views.put(UPLOADNEURONS, new VerticalLayout());
+						views.put(UPLOADNEURONS, new UploadNeuronsView());
 					}
 					setNewView(views.get(UPLOADNEURONS));
 				}
